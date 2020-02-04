@@ -18,12 +18,10 @@ export class AppComponent {
   profissoes = ['Programador', 'Analista', 'Arquiteto', 'Outra'];
 
   salvar(form: NgForm) {
-    // this.cliente.nome = form.value.primeiroNome;
-    // this.cliente.email = form.value.emailAddress;
-    // this.cliente.profissao = form.value.profissao;
-
     console.log(form);
-    // console.log(this.cliente);
+
+    form.reset({ primeiroNome: 'Sebastião', profissao: '' });
+
   }
 
 }
